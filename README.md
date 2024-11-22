@@ -20,8 +20,12 @@ A GIS-based Local Climate Zone mappong
 | 10 | 5 | open midrise |
 
 # Evaluation
+150 samples were generated using stratified random sampling. Each of the LCZ has at least 10 samples. High resolution satellite imagery was used to build the groundtruth.
+
+The overall accuracy is 82%. Below is the confusion matrix:
+
 | LCZ | B | D | 8 | 9 | G | A | F | E | 6 | 5 | Total | User Accuracy |
-|-----|---|---|---|---|---|---|---|---|---|---|-------|---------------|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:----:|:---:|
 |  B  | 7 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 |  10   |     0.7       |
 |  D  | 4 | 46| 1 | 2 | 0 | 2 | 0 | 0 | 0 | 0 |  55   |     0.84      |
 |  8  | 0 | 0 | 9 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |  10   |     0.9       |
