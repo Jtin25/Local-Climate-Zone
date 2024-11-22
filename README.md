@@ -1,3 +1,9 @@
+<div align="center">
+  <p>
+        <img src="images/LCZprocess.png" width="600">
+</p>
+</div>
+
 # Introduction
 A GIS-based Local Climate Zone mappong
 | Band Value | LCZ | Label |
