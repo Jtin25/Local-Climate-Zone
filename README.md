@@ -5,7 +5,9 @@
 </div>
 
 # Introduction
-A GIS-based Local Climate Zone mappong
+Local Climate Zone (LCZ) classification system offers the standardization of urban heat island studies and addresses the shortcomings of the urban-rural division (Stewart & Oke 2012). Given the increasing attention in LCZ, this project aims to illustrate an efficient and adaptable GIS-based LCZ mapping framework within the Uunited States. A modified standard rule-based approach was used to map 100m resolution LCZs in Denton County. All data proessing was performed in ArcGIS.
+
+
 | Band Value | LCZ | Label |
 |----------|----------|----------|
 | 1 | B | Scattered trees |
@@ -18,6 +20,16 @@ A GIS-based Local Climate Zone mappong
 | 8 | E | Bare rock or paved |
 | 9 | 6 | open lowrise |
 | 10 | 5 | open midrise |
+
+# Urban Canopy Parameters
+* Maxmium building footprint (m²)
+* Number of building
+* Mean building height (m)
+* Building surface fraction (%)
+* Majority landcover
+* Tree canopy surface fraction (%)
+* Pervious surface fraction (%)
+
 
 # Evaluation
 150 samples were generated using stratified random sampling. Each of the LCZ has at least 10 samples. High resolution satellite imagery was used to build the groundtruth.
