@@ -10,16 +10,17 @@ Local Climate Zone (LCZ) classification system offers the standardization of urb
 
 | Band Value | LCZ | Label |
 |----------|----------|----------|
-| 1 | B | Scattered trees |
-| 2 | D | Low plants |
-| 3 | 8 | Large lowrise |
-| 4 | 9 | Sparsely built |
-| 5 | G | Water |
-| 6 | A | Dense trees |
-| 7 | F | Bare soil or sand |
-| 8 | E | Bare rock or paved |
-| 9 | 6 | open lowrise |
-| 10 | 5 | open midrise |
+| 5 | 5 | Scattered trees |
+| 6 | 6 | Low plants |
+| 8 | 8 | Large lowrise |
+| 9 | 9 | Sparsely built |
+| 11 | A | Dense trees |
+| 12 | B | Scattered trees |
+| 14 | D | Low plants |
+| 15 | E | Bare rock or paved |
+| 16 | F | Bare soil or sand  |
+| 17 | G | Water |
+| 18 | 6D | Open lowrise & low plants |
 
 # Urban Canopy Parameters
 * Maxmium building footprint (m²)
