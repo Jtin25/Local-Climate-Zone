@@ -35,7 +35,7 @@ Local Climate Zone (LCZ) classification system offers the standardization of urb
 # Evaluation
 150 samples were generated using stratified random sampling. Each of the LCZ has at least 10 samples. High resolution satellite imagery was used to build the groundtruth.
 
-The overall accuracy is 82%. Below is the confusion matrix:
+The overall accuracy is 82% and the kappa coefficient is 0.78. Below is the confusion matrix:
 
 | LCZ | B | D | 8 | 9 | G | A | F | E | 6 | 5 | Total | User Accuracy |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:----:|:---:|
