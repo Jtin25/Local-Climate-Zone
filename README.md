@@ -1,6 +1,6 @@
 <div align="center">
   <p>
-    <img src="images/LCZprocess.png" width="600">
+    <img src="images/LCZprocess.png" width="1000">
   </p>
 </div>
 
@@ -52,6 +52,15 @@ Seven indicators were used in the decision tree to classify LCZs.
 </div>
 
 Due to the homogeneity of building height in Denton County, this approach simply used a 100-meter grid as opposed to performing a spatial autocorrelation analysis.
+
+# Basic Spatial Unit
+A two stage post processing were performed. In the first stage, a 3x3 moving window were used to keep the majority value. In the second stage, isolated pixel (polygon equal to 10,000m²) were aggregated to the neighboring polygon with the largest area. You can adjust this threshold to homogenize the result.
+
+<div align="center">
+  <p>
+    <img src="images/post_processing.png" width="800">
+  </p>
+</div>
 
 # Evaluation
 150 samples were generated using stratified random sampling. Each of the LCZ has at least 10 samples. High resolution satellite imagery was used to determine the groundtruth.
