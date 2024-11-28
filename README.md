@@ -1,11 +1,11 @@
 <div align="center">
   <p>
-        <img src="images/LCZprocess.png" width="600">
-</p>
+    <img src="images/LCZprocess.png" width="600">
+  </p>
 </div>
 
 # Introduction
-Local Climate Zone (LCZ) classification system offers the standardization of urban heat island studies and addresses the shortcomings of the urban-rural division (Stewart & Oke 2012). Given the increasing attention in LCZ, this project aims to illustrate an efficient and adaptable GIS-based LCZ mapping framework within the Uunited States. A modified standard rule-based approach was used to map 100m resolution LCZs in Denton County. All data proessing was performed in ArcGIS.
+The Local Climate Zone (LCZ) classification system offers the standardization of urban heat island studies and addresses the shortcomings of the urban-rural division (Stewart & Oke 2012). Given the increasing attention in LCZ, this project aims to exemplify an efficient and adaptable GIS-based LCZ mapping framework within the Uunited States. A modified standard rule-based approach was used to map 100-meter resolution LCZs in Denton County, Texas. All mapping procedure was performed in ArcGIS.
 
 
 | Band Value | LCZ | Label |
@@ -22,15 +22,34 @@ Local Climate Zone (LCZ) classification system offers the standardization of urb
 | 17 | G | Water |
 | 18 | 6D | Open lowrise & low plants |
 
-# Urban Canopy Parameters
-* Maxmium building footprint (m²)
-* Number of building
-* Mean building height (m)
-* Building surface fraction (%)
-* Majority landcover
-* Tree canopy surface fraction (%)
-* Pervious surface fraction (%)
+# Input Data 
+| Data | Resolution | Source |
+|----------|----------|----------|
+| Building Footprint | / | [Microsoft Building Footprint](https://github.com/microsoft/USBuildingFootprints) |
+| Land cover | 1 meter | [UrbanWatch](https://urbanwatch.charlotte.edu/)  |
+| Tree/ building height | 1 meter | Derived from LiDAR tiles from [TxGIO](https://tnris.org/)|
 
+# Urban Canopy Parameters
+
+Seven indicators were used in the decision tree to classify LCZs.
+
+1. Maxmium building footprint (m²)
+2. Number of building
+3. Mean building height (m)
+4. Building surface fraction (%)
+5. Majority landcover
+6. Tree canopy surface fraction (%)
+7. Pervious surface fraction (%)
+
+# Basic Spatial Unit
+<div align="center">
+  <p>
+    <img src="images/zoom1.png" width="350">
+    <img src="images/zoom2.png" width="350">
+  </p>
+</div>
+
+Due to the homogeneity of building height in Denton County, this approach simply used a 100-meter grid as opposed to performing a spatial autocorrelation analysis.
 
 # Evaluation
 150 samples were generated using stratified random sampling. Each of the LCZ has at least 10 samples. High resolution satellite imagery was used to build the groundtruth.
