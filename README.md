@@ -56,7 +56,7 @@ Due to the homogeneity of building height in Denton County, this approach simply
 # Evaluation
 150 samples were generated using stratified random sampling. Each of the LCZ has at least 10 samples. High resolution satellite imagery was used to determine the groundtruth.
 
-The overall accuracy is 82% and the kappa coefficient is 0.78. Below is the confusion matrix:
+The overall accuracy is 82% and the kappa coefficient is 0.78.
 
 | LCZ | B | D | 8 | 9 | G | A | F | E | 6 | 5 | Total | User Accuracy |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:----:|:---:|
@@ -72,3 +72,12 @@ The overall accuracy is 82% and the kappa coefficient is 0.78. Below is the conf
 |  5  | 0 | 1 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 6 |  10   |     0.6       |
 |Total| 13| 50| 15| 12| 11| 11| 3 | 9 | 20| 6 |  150  |               |
 |Producer Accuracy| 0.54 | 0.92 | 0.6 | 0.75 | 0.91 | 0.82 | 1 | 1 | 0.75 | 1 |     |     0.82       |
+
+### How different are the urban canopy parameters among the built types?
+A set of samples were selected among open midrise, open lowrise, large lowrise, and sparsely built to visualize their building properties.
+<div align="center">
+  <p>
+    <img src="images/building_properties.png" width="800">
+  </p>
+</div>
+
