@@ -5,7 +5,7 @@
 </div>
 
 # Introduction
-The Local Climate Zone (LCZ) classification system offers the standardization of urban heat island studies and addresses the shortcomings of the urban-rural division (Stewart & Oke 2012). Given the increasing attention in LCZ, this project aims to exemplify an efficient and adaptable GIS-based LCZ mapping framework within the Uunited States. A modified standard rule-based approach was used to map 100-meter resolution LCZs in Denton County, Texas. All mapping procedure was performed in ArcGIS.
+The Local Climate Zone (LCZ) classification system offers the standardization of urban heat island studies and addresses the shortcomings of the urban-rural division (Stewart & Oke 2012). Given the increasing attention in LCZ, this project aims to present an efficient and adaptable GIS-based LCZ mapping framework within the Uunited States. A modified standard rule-based approach was used to map 100-meter resolution LCZs in Denton County, Texas. All mapping procedure was performed in ArcGIS.
 
 The notebook has four parts. Part I illustrates the LCZ mapping procedure while Part II shows how to perform a confusion matrix to evaluate the accuracy. Part III & IV are optional steps to evaluate the thermal and building properties. The rules used in the decision tree may not be transferable and may require user adjustment depending on the study area.
 
