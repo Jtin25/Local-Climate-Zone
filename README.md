@@ -7,13 +7,15 @@
 # Introduction
 The Local Climate Zone (LCZ) classification system offers the standardization of urban heat island studies and addresses the shortcomings of the urban-rural division (Stewart & Oke 2012). Given the increasing attention in LCZ, this project aims to present an efficient and adaptable GIS-based LCZ mapping framework within the Uunited States. A modified standard rule-based approach was used to map 100-meter resolution LCZs in Denton County, Texas. All mapping procedure was performed in ArcGIS.
 
-The notebook has four parts. Part I illustrates the LCZ mapping procedure while Part II shows how to perform a confusion matrix to evaluate the accuracy. Part III & IV are optional steps to evaluate the thermal and building properties. The rules used in the decision tree may not be transferable and may require user adjustment depending on the study area.
+The notebook comprises four parts. Part I illustrates the LCZ mapping procedure and Part II shows how to perform a confusion matrix to evaluate the accuracy. Part III & IV are optional steps to evaluate the thermal and building properties. A user-defined rule-based approach was adopted in the mapping process. Therefore, rules used in the decision tree may not be transferable and may require user adjustment depending on the study area.
+
+Product I uses the orginial classification scheme while Product II adds a new class by combining open lowrise with low plants to represent open lowrise area with minimal tree cover. Both products use the following coding:
 
 
 | Band Value | LCZ | Label |
 |----------|----------|----------|
 | 5 | 5 | Scattered trees |
-| 6 | 6 | Low plants |
+| 6 | 6 | Open lowrise |
 | 8 | 8 | Large lowrise |
 | 9 | 9 | Sparsely built |
 | 11 | A | Dense trees |
