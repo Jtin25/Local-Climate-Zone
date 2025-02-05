@@ -14,7 +14,7 @@ Product I uses the orginial classification scheme while Product II adds a new cl
 
 | Band Value | LCZ | Label |
 |----------|----------|----------|
-| 5 | 5 | Scattered trees |
+| 5 | 5 | Open midrise |
 | 6 | 6 | Open lowrise |
 | 8 | 8 | Large lowrise |
 | 9 | 9 | Sparsely built |
