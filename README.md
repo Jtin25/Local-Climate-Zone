@@ -5,12 +5,9 @@
 </div>
 
 # Introduction
-The Local Climate Zone (LCZ) classification system offers the standardization of urban heat island studies and addresses the shortcomings of the urban-rural division (Stewart & Oke 2012). Given the increasing attention in LCZ, this project aims to present an efficient and adaptable GIS-based LCZ mapping framework within the Uunited States. A modified standard rule-based approach was used to map 100-meter resolution LCZs in Denton County, Texas. All mapping procedure was performed in ArcGIS.
+The Local Climate Zone (LCZ) classification system offers the standardization of urban heat island studies and addresses the shortcomings of the urban-rural division (Stewart & Oke 2012). Given the increasing interest in the applications of LCZ, this project aims to present an efficient and adaptable GIS-based LCZ mapping framework within the United States. A modified standard rule-based approach was used to map 100-meter resolution LCZs in Denton County, Texas. All mapping procedure was performed in ArcGIS Pro 3.3.
 
-The notebook comprises four parts. Part I illustrates the LCZ mapping procedure and Part II shows how to perform a confusion matrix to evaluate the accuracy. Part III & IV are optional steps to evaluate the thermal and building properties. A user-defined rule-based approach was adopted in the mapping process. Therefore, rules used in the decision tree may not be transferable and may require user adjustment depending on the study area.
-
-Product I uses the orginial classification scheme while Product II adds a new class by combining open lowrise with low plants to represent open lowrise area with minimal tree cover. Both products use the following coding:
-
+Product I (gisLCZ_v1.tif) uses the orginial classification scheme while Product II (gisLCZ_v2.tif) adds a new class by combining open lowrise with low plants to represent open lowrise area with minimal tree cover. Both products use the following coding:
 
 | Band Value | LCZ | Label |
 |----------|----------|----------|
@@ -34,7 +31,6 @@ Product I uses the orginial classification scheme while Product II adds a new cl
 | Tree/ building height | 1 meter | Derived from LiDAR tiles from [TxGIO](https://tnris.org/)|
 
 # Urban Canopy Parameters
-
 Seven indicators were used in the decision tree to classify LCZs.
 
 1. Maxmium building footprint (m²)
@@ -55,7 +51,7 @@ Seven indicators were used in the decision tree to classify LCZs.
 
 Due to the homogeneity of building height in Denton County, this approach simply used a 100-meter grid as opposed to performing a spatial autocorrelation analysis.
 
-# Basic Spatial Unit
+# Post Processing
 A two stage post processing were performed. In the first stage, a 3x3 moving window were used to keep the majority value. In the second stage, isolated pixel (polygon equal to 10,000m²) were aggregated to the neighboring polygon with the largest area. You can adjust this threshold to homogenize the result.
 
 <div align="center">
@@ -84,7 +80,11 @@ The overall accuracy is 82% and the kappa coefficient is 0.78.
 |Total| 13| 50| 15| 12| 11| 11| 3 | 9 | 20| 6 |  150  |               |
 |Producer Accuracy| 0.54 | 0.92 | 0.6 | 0.75 | 0.91 | 0.82 | 1 | 1 | 0.75 | 1 |     |     0.82       |
 
-### How different are the urban canopy parameters among the built types?
+## Code
+The notebook comprises four parts. Part I illustrates the LCZ mapping procedure, and Part II shows how to perform a confusion matrix to evaluate the accuracy. Part III & IV are optional steps to evaluate the inter-zonal thermal and building properties. 
+*Classification rules may not be transferable and may require user adjustment, depending on the study area. It is recommended to check the distribution of the UCPs values first.
+
+## How different are the urban canopy parameters among the built types?
 A set of samples were selected among open midrise, open lowrise, large lowrise, and sparsely built to visualize their building properties.
 <div align="center">
   <p>
