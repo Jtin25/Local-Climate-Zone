@@ -23,6 +23,11 @@ Product I (gisLCZ_v1.tif) uses the orginial classification scheme while Product 
 | 17 | G | Water |
 | 18 | 6D | Open lowrise & low plants |
 
+## Code
+The notebook comprises four parts. Part I illustrates the LCZ mapping procedure, and Part II shows how to perform a confusion matrix to evaluate the accuracy. Part III & IV are optional steps to evaluate the inter-zonal thermal and building properties. 
+
+*Classification rules may not be transferable and may require user adjustment, depending on the study area. It is recommended to check the distribution of the UCPs values first.*
+
 # Input Data 
 | Data | Resolution | Source |
 |----------|----------|----------|
@@ -79,10 +84,6 @@ The overall accuracy is 82% and the kappa coefficient is 0.78.
 |  5  | 0 | 1 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 6 |  10   |     0.6       |
 |Total| 13| 50| 15| 12| 11| 11| 3 | 9 | 20| 6 |  150  |               |
 |Producer Accuracy| 0.54 | 0.92 | 0.6 | 0.75 | 0.91 | 0.82 | 1 | 1 | 0.75 | 1 |     |     0.82       |
-
-## Code
-The notebook comprises four parts. Part I illustrates the LCZ mapping procedure, and Part II shows how to perform a confusion matrix to evaluate the accuracy. Part III & IV are optional steps to evaluate the inter-zonal thermal and building properties. 
-*Classification rules may not be transferable and may require user adjustment, depending on the study area. It is recommended to check the distribution of the UCPs values first.
 
 ## How different are the urban canopy parameters among the built types?
 A set of samples were selected among open midrise, open lowrise, large lowrise, and sparsely built to visualize their building properties.
