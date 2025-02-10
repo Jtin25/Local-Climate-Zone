@@ -97,7 +97,7 @@ A set of samples were selected among open midrise, open lowrise, large lowrise, 
 ## Reference
 Geletič, J., & Lehnert, M. (2016). GIS-based delineation of local climate zones: The case of medium-sized Central European cities. Moravian Geographical Reports, 24(3), 2-12.
 
-Geletič, J., & Lehnert, M. (2016). GIS-based delineation of local climate zones: The case of medium-sized Central European cities. Moravian Geographical Reports, 24(3), 2-12.
+Quan, S. J., & Bansal, P. (2021). A systematic review of GIS-based local climate zone mapping studies. Building and Environment, 196, 107791.
 
 Stewart, I. D., & Oke, T. R. (2012). Local climate zones for urban temperature studies. Bulletin of the American Meteorological Society, 93(12), 1879-1900.
 
