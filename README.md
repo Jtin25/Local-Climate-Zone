@@ -9,7 +9,7 @@ The Local Climate Zone (LCZ) classification system offers the standardization of
 
 Product I (gisLCZ_v1.tif) uses the orginial classification scheme while Product II (gisLCZ_v2.tif) adds a new class by combining open lowrise with low plants to represent open lowrise area with minimal tree cover. Both products use the following coding:
 
-| Band Value v1 | band Value v2 |LCZ | Label |
+| Band Value v1 | Band Value v2 |LCZ | Label |
 |----------|----------|----------|----------|
 | 0 | 0 | null | null |
 | 1 | 1 | B | Scattered trees |
@@ -95,5 +95,11 @@ A set of samples were selected among open midrise, open lowrise, large lowrise, 
 </div>
 
 ## Reference
+Geletič, J., & Lehnert, M. (2016). GIS-based delineation of local climate zones: The case of medium-sized Central European cities. Moravian Geographical Reports, 24(3), 2-12.
 
+Geletič, J., & Lehnert, M. (2016). GIS-based delineation of local climate zones: The case of medium-sized Central European cities. Moravian Geographical Reports, 24(3), 2-12.
+
+Stewart, I. D., & Oke, T. R. (2012). Local climate zones for urban temperature studies. Bulletin of the American Meteorological Society, 93(12), 1879-1900.
+
+Zheng, Y., Ren, C., Xu, Y., Wang, R., Ho, J., Lau, K., & Ng, E. (2018). GIS-based mapping of Local Climate Zone in the high-density city of Hong Kong. Urban climate, 24, 419-448.
 
