@@ -10,7 +10,7 @@ The Local Climate Zone (LCZ) classification system offers the standardization of
 Product I (gisLCZ_v1.tif) uses the orginial classification scheme while Product II (gisLCZ_v2.tif) adds a new class by combining open lowrise with low plants to represent open lowrise area with minimal tree cover. Both products use the following coding:
 
 | Band Value v1 | band Value v2 |LCZ | Label |
-|----------|----------|----------|
+|----------|----------|----------|----------|
 | 0 | 0 | null | null |
 | 1 | 1 | B | Scattered trees |
 | 2 | 2 | D | Low plants |
