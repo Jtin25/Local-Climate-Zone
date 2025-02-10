@@ -9,19 +9,20 @@ The Local Climate Zone (LCZ) classification system offers the standardization of
 
 Product I (gisLCZ_v1.tif) uses the orginial classification scheme while Product II (gisLCZ_v2.tif) adds a new class by combining open lowrise with low plants to represent open lowrise area with minimal tree cover. Both products use the following coding:
 
-| Band Value | LCZ | Label |
+| Band Value v1 | band Value v2 |LCZ | Label |
 |----------|----------|----------|
-| 5 | 5 | Open midrise |
-| 6 | 6 | Open lowrise |
-| 8 | 8 | Large lowrise |
-| 9 | 9 | Sparsely built |
-| 11 | A | Dense trees |
-| 12 | B | Scattered trees |
-| 14 | D | Low plants |
-| 15 | E | Bare rock or paved |
-| 16 | F | Bare soil or sand  |
-| 17 | G | Water |
-| 18 | 6D | Open lowrise & low plants |
+| 0 | 0 | null | null |
+| 1 | 1 | B | Scattered trees |
+| 2 | 2 | D | Low plants |
+| 3 | 3 | 8 | Large lowrise |
+| 4 | 4 | 9 | Sparsely built |
+| 5 | 5 | G | Water |
+| 6 | 6 | A | Dense trees |
+| 7 | 7 | F | Bare soil or sand |
+| 8 | 8 | E | Bare rock or paved |
+| 9 | 10 | 6 | Open lowrise |
+| n/a | 9 | 6D | Open lowrise & low plants |
+| 10 | 11 | 5 | Open midrise |
 
 ## Code
 The notebook comprises four parts. Part I illustrates the LCZ mapping procedure, and Part II shows how to perform a confusion matrix to evaluate the accuracy. Part III & IV are optional steps to evaluate the inter-zonal thermal and building properties. 
@@ -92,4 +93,7 @@ A set of samples were selected among open midrise, open lowrise, large lowrise, 
     <img src="images/building_properties.png" width="800">
   </p>
 </div>
+
+## Reference
+
 
