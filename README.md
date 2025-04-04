@@ -9,20 +9,20 @@ The Local Climate Zone (LCZ) classification system offers the standardization of
 
 Product I (gisLCZ_v1.tif) uses the orginial classification scheme while Product II (gisLCZ_v2.tif) adds a new class by combining open lowrise with low plants to represent open lowrise area with minimal tree cover. Both products use the following coding:
 
-| Band Value v1 | Band Value v2 |LCZ | Label |
-|----------|----------|----------|----------|
-| 0 | 0 | null | null |
-| 1 | 1 | B | Scattered trees |
-| 2 | 2 | D | Low plants |
-| 3 | 3 | 8 | Large lowrise |
-| 4 | 4 | 9 | Sparsely built |
-| 5 | 5 | G | Water |
-| 6 | 6 | A | Dense trees |
-| 7 | 7 | F | Bare soil or sand |
-| 8 | 8 | E | Bare rock or paved |
-| 9 | 10 | 6 | Open lowrise |
-| n/a | 9 | 6D | Open lowrise & low plants |
-| 10 | 11 | 5 | Open midrise |
+| Band Value v1 | Band Value v2 |LCZ | Label | HEX reference |
+|----------|----------|----------|----------|----------|
+| 0 | 0 | null | null | n/a |
+| 1 | 1 | B | Scattered trees | #70A800 |
+| 2 | 2 | D | Low plants | #B9DB79 |
+| 3 | 3 | 8 | Large lowrise | #CCCCC3 |
+| 4 | 4 | 9 | Sparsely built | #FFEBAF |
+| 5 | 5 | G | Water | #BEE8FF |
+| 6 | 6 | A | Dense trees | #006A00 |
+| 7 | 7 | F | Bare soil or sand | #A87000 |
+| 8 | 8 | E | Bare rock or paved | #4E4E4E |
+| 9 | 10 | 6 | Open lowrise | #D7AE7B |
+| n/a | 9 | 6D | Open lowrise & low plants | #FFA77F |
+| 10 | 11 | 5 | Open midrise | #FF5500 |
 
 ## Code
 The notebook comprises four parts. Part I illustrates the LCZ mapping procedure, and Part II shows how to perform a confusion matrix to evaluate the accuracy. Part III & IV are optional steps to evaluate the inter-zonal thermal and building properties. 
